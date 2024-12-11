@@ -1,7 +1,7 @@
 <template>
-    <div>
-        <TopNav />
-        <slot />
-        <Footer />
-    </div>
+  <TopNav class="fixed" />
+  <div class="pt-[72px]">
+    <slot />
+    <Footer />
+  </div>
 </template>
