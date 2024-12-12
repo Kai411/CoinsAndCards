@@ -32,6 +32,11 @@ const coins = useProductsStore();
     />
   </div>
   <NuxtLayout name="content">
-    <div class="h-[100vh]"></div>
+    <section class="new-arrival mt-[32px]">
+      <p class="font-bold font-chakra text-[42px] text-center">New Arrival!</p>
+    </section>
+    <section class="popular mt-[32px]">
+      <p class="font-bold font-chakra text-[42px] text-center">Popular Items</p>
+    </section>
   </NuxtLayout>
 </template>

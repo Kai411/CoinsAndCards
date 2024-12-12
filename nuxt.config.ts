@@ -1,6 +1,7 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
-
+  css: ["~/assets/styles/global.css"],
+  ssr: false,
   devtools: { enabled: true },
   modules: ["@nuxtjs/tailwindcss", "@nuxt/icon", "shadcn-nuxt", "@pinia/nuxt"],
   icon: {

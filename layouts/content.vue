@@ -1,5 +1,5 @@
 <template>
-    <div class="px-[24px]">
-        <slot />
-    </div>
+  <div class="px-[24px] min-h-[50vh]">
+    <slot />
+  </div>
 </template>

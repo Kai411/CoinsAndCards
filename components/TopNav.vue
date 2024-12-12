@@ -9,13 +9,22 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { Button } from "@/components/ui/button";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
 </script>
 
 <template>
   <div
     class="px-[24px] py-[16px] flex items-center justify-between flex bg-white w-full"
   >
-    <img class="h-7" src="~assets/images/logo-temp.png" alt="" />
+    <a href="/">
+      <!-- <img class="h-7" src="~assets/images/logo-temp.png" alt="" /> -->
+      <p class="font-chakra font-bold">Coins & Cards</p>
+    </a>
+
     <div class="nav-items">
       <NavigationMenu>
         <NavigationMenuList>
@@ -29,7 +38,7 @@ import { Button } from "@/components/ui/button";
                   <NavigationMenuLink as-child>
                     <a
                       class="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md hover:bg-accent"
-                      href="/"
+                      href="/products/pre-order"
                       style="
                         /* background-image: url('https://printler.com/media/photo/177458.jpg'); */
                       "
@@ -49,7 +58,7 @@ import { Button } from "@/components/ui/button";
                 <li>
                   <NavigationMenuLink as-child>
                     <a
-                      href="/docs/installation"
+                      href="/products/pre-order/coins"
                       class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                     >
                       <div class="text-sm font-medium leading-none">
@@ -66,7 +75,7 @@ import { Button } from "@/components/ui/button";
                 <li>
                   <NavigationMenuLink as-child>
                     <a
-                      href="/docs/typography"
+                      href="/products/pre-order/tcg"
                       class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                     >
                       <div class="text-sm font-medium leading-none">
@@ -93,7 +102,7 @@ import { Button } from "@/components/ui/button";
                   <NavigationMenuLink as-child>
                     <a
                       class="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md hover:bg-accent"
-                      href="/"
+                      href="/products/coins"
                     >
                       <!-- <img
                         src="https://www.radix-vue.com/logo.svg"
@@ -112,7 +121,7 @@ import { Button } from "@/components/ui/button";
                 <li>
                   <NavigationMenuLink as-child>
                     <a
-                      href="/docs/introduction"
+                      href="/products/coins/graded"
                       class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                     >
                       <div class="text-sm font-medium leading-none">
@@ -129,7 +138,7 @@ import { Button } from "@/components/ui/button";
                 <li>
                   <NavigationMenuLink as-child>
                     <a
-                      href="/docs/installation"
+                      href="/products/coins/singles"
                       class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                     >
                       <div class="text-sm font-medium leading-none">
@@ -164,7 +173,7 @@ import { Button } from "@/components/ui/button";
             </NavigationMenuContent>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <NavigationMenuTrigger>TCG</NavigationMenuTrigger>
+            <NavigationMenuTrigger>Pokémon TCG</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul
                 class="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[minmax(0,.75fr)_minmax(0,1fr)]"
@@ -173,7 +182,7 @@ import { Button } from "@/components/ui/button";
                   <NavigationMenuLink as-child>
                     <a
                       class="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md hover:bg-accent"
-                      href="/"
+                      href="/products/tcg"
                       style="
                         /* background-image: url('https://printler.com/media/photo/177458.jpg'); */
                       "
@@ -193,7 +202,7 @@ import { Button } from "@/components/ui/button";
                 <li>
                   <NavigationMenuLink as-child>
                     <a
-                      href="/docs/introduction"
+                      href="/products/tcg/bundles"
                       class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                     >
                       <div class="text-sm font-medium leading-none">
@@ -210,7 +219,7 @@ import { Button } from "@/components/ui/button";
                 <li>
                   <NavigationMenuLink as-child>
                     <a
-                      href="/docs/installation"
+                      href="/products/tcg/boosters"
                       class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                     >
                       <div class="text-sm font-medium leading-none">
@@ -227,7 +236,7 @@ import { Button } from "@/components/ui/button";
                 <li>
                   <NavigationMenuLink as-child>
                     <a
-                      href="/docs/typography"
+                      href="/products/tcg/graded"
                       class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                     >
                       <div class="text-sm font-medium leading-none">
@@ -255,7 +264,7 @@ import { Button } from "@/components/ui/button";
                   <NavigationMenuLink as-child>
                     <a
                       class="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md hover:bg-accent"
-                      href="/"
+                      href="/grading"
                       style="
                         /* background-image: url('https://printler.com/media/photo/177458.jpg'); */
                       "
@@ -268,7 +277,7 @@ import { Button } from "@/components/ui/button";
                         Grading Service
                       </div>
                       <p class="text-sm leading-tight text-muted-foreground">
-                        Safe and secure grading services.
+                        Learn more about our grading service.
                       </p>
                     </a>
                   </NavigationMenuLink>
@@ -277,7 +286,7 @@ import { Button } from "@/components/ui/button";
                 <li>
                   <NavigationMenuLink as-child>
                     <a
-                      href="/docs/installation"
+                      href="/grading/coins"
                       class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                     >
                       <div class="text-sm font-medium leading-none">
@@ -294,11 +303,11 @@ import { Button } from "@/components/ui/button";
                 <li>
                   <NavigationMenuLink as-child>
                     <a
-                      href="/docs/typography"
+                      href="/grading/tcg"
                       class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                     >
                       <div class="text-sm font-medium leading-none">
-                        Pokemon TCG
+                        TCG Cards
                       </div>
                       <p
                         class="line-clamp-2 text-sm leading-snug text-muted-foreground"
@@ -320,9 +329,19 @@ import { Button } from "@/components/ui/button";
       </NavigationMenu>
     </div>
     <div class="actions flex items-center gap-[16px]">
-      <Button variant="ghost"
-        ><Icon name="uil:cart" style="color: black" size="28"
-      /></Button>
+      <Popover>
+        <PopoverTrigger class="flex">
+          <Icon name="uil:cart" style="color: black" size="28" />
+        </PopoverTrigger>
+        <PopoverContent class="w-80">
+          <p class="">Cart Items (0)</p>
+          <hr class="my-3" />
+          <p class="text-center mb-4">Cart is empty</p>
+          <NuxtLink to="products">
+            <Button class="w-full">Browse Products</Button>
+          </NuxtLink>
+        </PopoverContent>
+      </Popover>
 
       <Button>Login</Button>
     </div>
